@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="206.920753">
+<testcase classname="Weather Conditions in different cities" name="Weather Conditions in different cities" time="164.942593">
+<failure message="java.lang.AssertionError&#13;&#10;&#9;at org.junit.Assert.fail(Assert.java:86)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:41)&#13;&#10;&#9;at org.junit.Assert.assertTrue(Assert.java:52)&#13;&#10;&#9;at stepdefinition.stepdefinition.something_temperature_gets_display_for_the_city(stepdefinition.java:133)&#13;&#10;&#9;at ✽.Then &quot;C&quot; temperature gets display for the City(OpenWeatherMapLandingPage.feature:15)&#13;&#10;"><![CDATA[Given User on the Home Page of openweathermaps Website......................passed
+When User verify OpenWeather logo is present on openweathermaps Website.....passed
+And User Clicks on Weather in your city input search box....................passed
+And Enter City Name as "Hyderabad"..........................................passed
+And User clicks on search once the City details entered.....................passed
+Then "Hyderabad" City Weather details should get displayed..................passed
+And User clicks on Sign in button and Sign in form details should get display.passed
+And User clicks on Sign up button and Sign up details should get display....passed
+And User clicks on Weather button to come on Home Page......................passed
+When User clicks on C button displaying on the Top window...................passed
+Then "C" temperature gets display for the City..............................failed
+And if the User clicks on F button displaying on the Top window.............skipped
+Then "F" temperature should display for the City............................skipped
+
+StackTrace:
+java.lang.AssertionError
+	at org.junit.Assert.fail(Assert.java:86)
+	at org.junit.Assert.assertTrue(Assert.java:41)
+	at org.junit.Assert.assertTrue(Assert.java:52)
+	at stepdefinition.stepdefinition.something_temperature_gets_display_for_the_city(stepdefinition.java:133)
+	at ✽.Then "C" temperature gets display for the City(OpenWeatherMapLandingPage.feature:15)
+]]></failure>
+</testcase>
+<testcase classname="Weather Conditions in different cities" name="Weather Conditions in different cities" time="22.633891">
+<system-out><![CDATA[Given User on the Home Page of openweathermaps Website......................passed
+When without Name "df6d7f6".................................................passed
+And USer clicks on search...................................................passed
+Then "Not found" Weather Condition should not get displayed.................passed
+And User clicks on Weather to come on Home Page.............................passed
+]]></system-out>
+</testcase>
+<testcase classname="Weather Conditions in different cities" name="Weather Conditions in different cities" time="19.344269">
+<system-out><![CDATA[Given User on the Home Page of openweathermaps Website......................passed
+When User enters the City Name as "Mumbai"..................................passed
+And USer clicks on search...................................................passed
+Then "Mumbai" Weather Condition should get displayed........................passed
+And User clicks on Weather to come on Home Page.............................passed
+]]></system-out>
+</testcase>
+</testsuite>
